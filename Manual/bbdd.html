@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<!-- configuración-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<!-- Para que se vea en dispositivos moviles -->
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<!-- Estilos de Boostrap -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+		<script type="text/javascript" src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+		<link type="text/css" rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css">
+		<!-- Mi estilos -->
+		<link rel="stylesheet" type="text/css" href="resource/estilos.css">
+		<!-- Ajustes -->
+		<title>Manual Usuario</title>
+
+	</head>
+	<body>
+	<!-- Start your code here -->
+	<div class="container">
+	  <nav role="navigation" class="navbar navbar-default">
+	        <div class="navbar-header">
+	            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	            <a href="index.html" class="navbar-brand"> Practica 3. </a>
+	        </div>
+
+	        <div id="navbarCollapse" class="collapse navbar-collapse">
+	            <ul class="nav navbar-nav pull-right">
+	                <li class="dropdown"><a href="manualUsuario.html" >Manual Cliente</a> </li>
+	                <li class="dropdown"><a href="manualServidor.html" >Manual Servidor</a> </li>
+	                <li class="dropdown"><a href="bbdd.html" >BBDD</a> </li>
+	                <li class="dropdown"> <input type="button" class="btn btn-primary btn-lg btn-block" value="volver atrás" name="volver atrás2" onclick="history.back()" /> </li> 
+	            </ul>
+	        </div>
+				        
+	    </nav>
+	</div>
+
+	<div class="container">
+		<section class="jumbotron jumbotron-A">
+			<div class="container">
+				<h1> BBDD </h1>
+				<p> Informaci&oacute;n acerca de la base de datos, as&iacute; centrandonos en la forma de la tabla, bean para editar y utilizar otra BBDD con el mismo formato y dependencias necesarias la caracter%iacutesticas de maven ofrecias por spring relaciondas con JDBC Template y evitar utilizar librerias jar.</p>
+			</div>
+		</section>
+	</div>
+
+	<section class="main container">
+		<div clas="row">
+			<section class="posts">
+				<div class="miga-de-pan">
+					<ol class="breadcrumb">
+						<li> <a href="#"> Inicio </a> </li>
+						<li> <a href="bean.html"> Bean </a> </li>
+						<li> <a href="dependencias.html"> Dependencias </a> </li>  
+					</ol>
+				</div>
+
+
+
+				 <article class="post clearfix">
+				 	<h2 class="post-title">
+				 		<a href="#"> Forma de la tabla</a>
+				 	</h2>
+
+				 	<p> <span class="post-fecha"> 18 de Marzo 2018, </span> 
+						<span class="post-autor"> Andres y Luis </span>
+				 	</p>
+				 	<p class="post-contenido text-justify">
+				 		Para la creací&oacute;n de la base de datos hemos utilizado el servicio de php que ofrece Wampserver, y cuenta con una sola tabla denominada "miembros" de dos columnas:
+				 		<ul>
+				 			<li> DNI</li>
+				 			<li> USUARIO</li>
+				 		</ul>
+				 		Cada columna, tiene la funci&oacute;n de ser un atributo de tipo String.
+				 		Adem&aacute;s la columna o atributo DNI, es la clave primaria de la tabla para poder recorla, de manera que es importante que el valor de este atributo no se puede repetir, de lo contrario, saltar&iacute;a o se producir&iacute;a una error.
+				 	</p>
+				 	<center>
+				 		<img src="resource/img/formaTablaBBDD.JPG"  alt="imagen de parametros nulos"/>
+				 	</center>
+				 </article>
+
+				  <article class="post clearfix">
+				 	<h2 class="post-title">
+				 		<a href="#"> Disposici&oacute;n de la BBDD</a>
+				 	</h2>
+
+				 	<p> <span class="post-fecha"> 18 de Marzo 2018, </span> 
+						<span class="post-autor"> Andres y Luis </span>
+				 	</p>
+				 	<p class="post-contenido text-justify">
+				 		Para evitar que usted tenga que generar una tabla nueva, e importado la tabla "miembros.sql" al proyecto, en el directorio "lib" que cuelga de la ruta ServetHTTP/src/main/webapp/WEB-INF
+
+				 	</p>
+				 	<center>
+				 		<img src="resource/img/rutaMiembros.JPG" alt="error en el nombre"/>
+				 	</center>
+				 </article>
+
+				 
+			</section>
+		</div>
+		
+	</section>
+
+
+</body>
+<!DOCTYPE html>

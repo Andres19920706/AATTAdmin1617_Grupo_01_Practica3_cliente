@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<!-- configuración-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<!-- Para que se vea en dispositivos moviles -->
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<!-- Estilos de Boostrap -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+		<script type="text/javascript" src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+		<link type="text/css" rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css">
+		<!-- Mi estilos -->
+		<link rel="stylesheet" type="text/css" href="resource/estilos.css">
+		<!-- Ajustes -->
+		<title>Manual Usuario</title>
+
+	</head>
+	<body>
+	<!-- Start your code here -->
+	<div class="container">
+	  <nav role="navigation" class="navbar navbar-default">
+	        <div class="navbar-header">
+	            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	            <a href="index.html" class="navbar-brand"> Practica 3. </a>
+	        </div>
+
+	        <div id="navbarCollapse" class="collapse navbar-collapse">
+	            <ul class="nav navbar-nav pull-right">
+	                <li class="dropdown"><a href="manualUsuario.html" >Manual Cliente</a> </li>
+	                <li class="dropdown"><a href="manualServidor.html" >Manual Servidor</a> </li>
+	                <li class="dropdown"><a href="bbdd.html" >BBDD</a> </li>
+	                <li class="dropdown"> <input type="button" class="btn btn-primary btn-lg btn-block" value="volver atrás" name="volver atrás2" onclick="history.back()" /> </li> 
+	            </ul>
+	        </div>
+				        
+	    </nav>
+	</div>
+
+	<div class="container">
+		<section class="jumbotron jumbotron-A">
+			<div class="container">
+				<h1> BBDD </h1>
+				<p> Informaci&oacute;n acerca de la base de datos, as&iacute; centrandonos en la forma de la tabla, bean para editar y utilizar otra BBDD con el mismo formato y dependencias necesarias la caracter%iacutesticas de maven ofrecias por spring relaciondas con JDBC Template y evitar utilizar librerias jar.</p>
+			</div>
+		</section>
+	</div>
+
+	<section class="main container">
+		<div clas="row">
+			<section class="posts">
+				<div class="miga-de-pan">
+					<ol class="breadcrumb">
+						<li> <a href="bbdd.html"> Inicio </a> </li>
+						<li> <a href="#"> Bean </a> </li>
+						<li> <a href="dependencias.html"> Dependencias </a> </li>  
+					</ol>
+				</div>
+
+
+
+				 <article class="post clearfix">
+				 	<h2 class="post-title">
+				 		<a href="#"> Alojamiento BBDD.</a>
+				 	</h2>
+
+				 	<p> <span class="post-fecha"> 18 de Marzo 2018, </span> 
+						<span class="post-autor"> Andres y Luis </span>
+				 	</p>
+				 	<p class="post-contenido text-justify">
+				 		No es objetivo de esta asiganura conocer la existencia de been, pero esta relacionado con el buen funcionamiento de la pr&aacute;ctica, puesto que es necesario indicar la ubicaci&oacute;n de nuestra BBDD.<br>
+				 		Para ello debemos insertar un bean y crear una dependencia entre el objeto DataSource y el objeto Usuario, e indicar en unas de sus propiedades la ubicaci&oacute;n del alojamiento de la tabla que contiene nuestra base de datos.<br>
+				 		En nuestro caso, la ruta es jdbc:mysql://localhost:3306/practica03_aattaa, pudiendo acceder solamente a ella el administrador (root), sin ning&uacute;n tipo de autenticaci&oacute;n.
+
+				 	</p>
+				 	<center>
+				 		<img src="resource/img/bean.JPG"  alt="imagen de parametros nulos"/>
+				 	</center>
+				 	<br>
+				 	<p class="post-contenido text-justify">
+				 		Este bean se insertar&aacute; en el archivo servlet-context.xml, aunque tambien se puede insertar en root-context.xml, sin embargo, recomiendo el primer fichero citado en este p&aacute;rrafo dado que el segundo fichero engloba a servlet-context.xml.<br>
+				 		El fichero Servlet-context.xml se encuentra en el directorio appServlet, que cuelga de la ruta ServletHTTP/src/main/webapp/spring/app/Servlet.
+				 	</p>
+				 	<center>
+				 		<img src="resource/img/rutaServletContext.JPG"  alt="imagen de parametros nulos"/>
+				 	</center>
+				 </article>
+
+			</section>
+		</div>
+		
+	</section>
+
+
+</body>
+<!DOCTYPE html>

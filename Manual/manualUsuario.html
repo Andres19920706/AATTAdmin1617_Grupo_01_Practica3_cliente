@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<!-- configuración-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<!-- Para que se vea en dispositivos moviles -->
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<!-- Estilos de Boostrap -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+		<script type="text/javascript" src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+		<link type="text/css" rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css">
+		<!-- Mi estilos -->
+		<link rel="stylesheet" type="text/css" href="resource/estilos.css">
+		<!-- Ajustes -->
+		<title>Manual Usuario</title>
+
+	</head>
+	<body>
+	<!-- Start your code here -->
+	<div class="container">
+	<div class="container">
+	  <nav role="navigation" class="navbar navbar-default">
+	        <div class="navbar-header">
+	            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	            <a href="index.html" class="navbar-brand"> Practica 3. </a>
+	        </div>
+
+	        <div id="navbarCollapse" class="collapse navbar-collapse">
+	            <ul class="nav navbar-nav pull-right">
+	                <li class="dropdown"><a href="manualUsuario.html" >Manual Cliente</a> </li>
+	                <li class="dropdown"><a href="manualServidor.html" >Manual Servidor</a> </li>
+	                <li class="dropdown"><a href="bbdd.html" >BBDD</a> </li>
+	                <li class="dropdown"> <input type="button" class="btn btn-primary btn-lg btn-block" value="volver atrás" name="volver atrás2" onclick="history.back()" /> </li> 
+	            </ul>
+	        </div>
+				        
+	    </nav>
+	</div>
+	
+	<div class="container">
+		<section class="jumbotron jumbotron-A">
+			<div class="container">
+				<h1> Manual Cliente </h1>
+				<p> Informaci&oacute;n de como acceder al servicio a trav&eacute;s de la aplicaci&oacute;n cliente.</p>
+			</div>
+		</section>
+	</div>
+
+	<section class="main container">
+		<div clas="row">
+			<section class="posts">
+				<div class="miga-de-pan">
+					<ol class="breadcrumb">
+						<li> <a href="#"> Inicio </a> </li>
+						<li> <a href="erroresCliente.html"> Eventos </a> </li> 
+					</ol>
+				</div>
+
+				 <article class="post clearfix">
+				 	<h2 class="post-title">
+				 		<a href="#"> Arranque </a>
+				 	</h2>
+
+				 	<p> <span class="post-fecha"> 18 de Marzo 2018 </span> 
+						<span class="post-autor"> Andres y Luis </span>
+				 	</p>
+				 	<img src="resource/img/run.JPG"  alt="imagen 1"/> 
+				 	<p class="post-contenido text-justify">
+				 		Vamos a la ubicaci&oacute;n de la apliaci&oacute;n cliente denominada "Practica3.jar" y clikeamos sobre el jar. En nuestro caso esta contenido en la carpeta dir del del proyecto.
+				 	</p>
+				 </article>
+
+
+				 <article class="post clearfix">
+				 	<h2 class="post-title">
+				 		<a href="#"> Primer Contacto </a>
+				 	</h2>
+
+				 	<p> <span class="post-fecha"> 18 de Marzo 2018, </span> 
+						<span class="post-autor"> Andres y Luis </span>
+				 	</p>
+				 	<p class="post-contenido text-justify">
+				 		Tras ejecutar el jar, nos aparece una interfaz gr&aacute;fica, con dos secciones.
+				 	</p>
+				 	<table class="table" >
+				    	<tr>
+				    		<td rowspan="2"> <img src="resource/img/primerContacto.JPG"  width="190" height="225" alt="imagen 1"/> </td>
+				    		<td> <p class="post-contenido text-justify"> Secci&oacute;n A: </p> </td>
+				    		<td> <p class="post-contenido text-justify"> Formulario b&aacute;sico para la autenticaci&oacute;n, realiza una petici&oacute;n post al servidor. </p> </td>
+				    	</tr>
+
+				    	<tr>
+				    		<td> <p class="post-contenido text-justify"> Secci&oacute;n B: </p> </td>
+				    		<td> <p class="post-contenido text-justify"> Obtiene los datos del DNI, los almacena en un fichero de texto y reliza una petici&oacute;n post al servidor. </p> </td>
+				    	</tr>
+			    	</table>
+				 </article>
+
+				 <article class="post clearfix">
+				 	<h2 class="post-title">
+				 		<a href="#"> Datos del DNIe </a>
+				 	</h2>
+
+				 	<p> <span class="post-fecha"> 18 de Marzo 2018, </span> 
+						<span class="post-autor"> Andres y Luis </span>
+				 	</p>
+				 	<p class="post-contenido text-justify">
+				 		Si nos autenticamos mediante el DNIe, y esta a sido satisfactoria, nos mostrará los datos p&uacute;blicos almacenados en el DNIe, en tres tipos de codificaci&oacute;n, en decimal, en byte y en caractar, es decir, la representacion del caracter en decimal y en byte, pudiendo analizar los distinos OID publicados por HL7 Spain en 2008.
+
+				 		De manera que para cualquier gestión relativa a los OID, contacte con webmaster at hl7spain org como curiosidad.
+
+				 		<div class="alert alert-danger">
+				 			<p class="post-contenido text-justify">
+				 				Puede que en la aplicaci&oacute;n cliente ejecutada mediante el jar, no se muestren los datos. 
+				 				Esto se debe a que debes crear una carpeta con el nombre "Source" en el mismo directorio donde se encuentre el jar.
+				 			</p>
+				 		</div>
+				 	</p>
+				 	<center>
+				 		<img src="resource/img/datosDNI.JPG" alt="imagen 1"/>
+				 	</center>
+				 </article>
+
+				 <article class="post clearfix">
+				 	<h2 class="post-title">
+				 		<a href="#"> Fin </a>
+				 	</h2>
+
+				 	<p> <span class="post-fecha"> 18 de Marzo 2018, </span> 
+						<span class="post-autor"> Andres y Luis </span>
+				 	</p>
+				 	<p class="post-contenido text-justify">
+				 		Si todo ha sido correcto, nos mostrar&aacute; una venta para salir de la aplicaci&oacute;n.
+				 	</p>
+				 	<center>
+				 		<img src="resource/img/fin.JPG" alt="imagen 1"/>
+				 	</center>
+				 </article>
+
+			</section>
+		</div>
+		
+	</section>
+
+
+
+</body>
+<!DOCTYPE html>

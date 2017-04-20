@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<!-- configuración-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<!-- Para que se vea en dispositivos moviles -->
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<!-- Estilos de Boostrap -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+		<script type="text/javascript" src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+		<link type="text/css" rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css">
+		<!-- Mi estilos -->
+		<link rel="stylesheet" type="text/css" href="resource/estilos.css">
+		<!-- Ajustes -->
+		<title>Manual Usuario</title>
+
+	</head>
+	<body>
+	<!-- Start your code here -->
+		<div class="container">
+	  <nav role="navigation" class="navbar navbar-default">
+	        <div class="navbar-header">
+	            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	            <a href="index.html" class="navbar-brand"> Practica 3. </a>
+	        </div>
+
+	        <div id="navbarCollapse" class="collapse navbar-collapse">
+	            <ul class="nav navbar-nav pull-right">
+	                <li class="dropdown"><a href="manualUsuario.html" >Manual Cliente</a> </li>
+	                <li class="dropdown"><a href="manualServidor.html" >Manual Servidor</a> </li>
+	                <li class="dropdown"><a href="bbdd.html" >BBDD</a> </li>
+	                <li class="dropdown"> <input type="button" class="btn btn-primary btn-lg btn-block" value="volver atrás" name="volver atrás2" onclick="history.back()" /> </li> 
+	            </ul>
+	        </div>
+				        
+	    </nav>
+	</div>
+
+	<div class="container">
+		<section class="jumbotron jumbotron-A">
+			<div class="container">
+				<h1> Manual Servidor </h1>
+				<p> Informaci&oacute;n de como acceder al servicio a trav&eacute;s de una navegordor mediante peticiones get y post.</p>
+			</div>
+		</section>
+	</div>
+
+	<section class="main container">
+		<div clas="row">
+			<section class="posts ">
+				<div class="miga-de-pan">
+					<ol class="breadcrumb">
+						<li> <a href="manualServidor.html"> Inicio </a> </li>
+						<li> <a href="#"> Eventos </a> </li>  
+					</ol>
+				</div>
+
+
+
+				 <article class="post clearfix">
+				 	<h2 class="post-title">
+				 		<a href="#"> Parametros vac&iacute;os.</a>
+				 	</h2>
+
+				 	<p> <span class="post-fecha"> 18 de Marzo 2018, </span> 
+						<span class="post-autor"> Andres y Luis </span>
+				 	</p>
+				 	<p class="post-contenido text-justify">
+				 		No se puede recibir par&aacute;metros con valor nulo, en caso de que el servidor reciba un parametro nulo, devuelve el formulario de nuevo.
+				 	</p>
+				 	<center>
+				 		<img src="resource/img/paramVacio.JPG"  alt="imagen de parametros nulos"/>
+				 	</center>
+				 </article>
+
+				  <article class="post clearfix">
+				 	<h2 class="post-title">
+				 		<a href="#"> Error de Petici&oacute;n</a>
+				 	</h2>
+
+				 	<p> <span class="post-fecha"> 18 de Marzo 2018, </span> 
+						<span class="post-autor"> Andres y Luis </span>
+				 	</p>
+				 	<p class="post-contenido text-justify">
+				 		Tipo de error: 401 Autenticacion Requerida.
+				 		Usted realiz&oacute; una petici&oacute;n sin par&aacuete;metros.
+
+				 	</p>
+				 	<center>
+				 		<img src="resource/img/errorAutentica.JPG" alt="error en el nombre"/>
+				 	</center>
+				 </article>
+
+				 <article class="post clearfix">
+				 	<h2 class="post-title">
+				 		<a href="#"> Error en el Nombre</a>
+				 	</h2>
+
+				 	<p> <span class="post-fecha"> 18 de Marzo 2018, </span> 
+						<span class="post-autor"> Andres y Luis </span>
+				 	</p>
+				 	<p class="post-contenido text-justify">
+				 		Tipo de error: 402 Nombre incorrecto.
+				 		Usted insert&oacute; un nombre no disponible en nuestra base de datos.
+				 	</p>
+				 	<center>
+				 		<img src="resource/img/nameError.JPG" alt="error en el nombre"/>
+				 		
+				 	</center>
+				 </article>
+
+				  <article class="post clearfix">
+				 	<h2 class="post-title">
+				 		<a href="#"> Error en la Contrase&ntilde;a</a>
+				 	</h2>
+
+				 	<p> <span class="post-fecha"> 18 de Marzo 2018, </span> 
+						<span class="post-autor"> Andres y Luis </span>
+				 	</p>
+				 	<p class="post-contenido text-justify">
+				 		Tipo de error: 403 Contrase&ntilde;a incorrecta.
+				 		Usted insert&oacute; una clave no asociada al usuario.
+				 	</p>
+				 	<center>
+				 		<img src="resource/img/errorClave.JPG" alt="error en el nombre"/>
+				 	</center>
+				 </article>
+
+				 <article class="post clearfix">
+				 	<h2 class="post-title">
+				 		<a href="#"> Solicitud Correcta</a>
+				 	</h2>
+
+				 	<p> <span class="post-fecha"> 18 de Marzo 2018, </span> 
+						<span class="post-autor"> Andres y Luis </span>
+				 	</p>
+				 	<p class="post-contenido text-justify">
+				 		Respuesta: 200 Solictud correcta.
+				 	</p>
+				 	<table class="table" >
+				    	<tr>
+				    		<td rowspan="2"> <center> <img src="resource/img/ok.JPG" alt="imagen 1"/> </center> </td>
+				    		<td> <p class="post-contenido text-justify"> La autenticaci&oacute;n se realiz&oacute; con &eacute;xito, mediante el formulario o con DNIe</p> </td>
+				    	</tr>
+
+			    	</table>
+				 </article>
+
+				 <article class="post clearfix">
+				 	<h2 class="post-title">
+				 		<a href="#"> Error en la solicitud </a>
+				 	</h2>
+
+				 	<p> <span class="post-fecha"> 18 de Marzo 2018, </span> 
+						<span class="post-autor"> Andres y Luis </span>
+				 	</p>
+				 	<p class="post-contenido text-justify">
+				 		Tipo de error: 400 Solicitud incorrecta.
+				 		Se produjo un error el realizar la petici&oacute;n.
+				 	</p>
+				 	<center>
+				 		<img src="resource/img/errorSolicitudServer.JPG" alt="error en la contrase&ntilde;a"/>
+				 	</center>
+				 </article>
+
+			</section>
+		</div>
+		
+	</section>
+
+
+</body>
+<!DOCTYPE html>
